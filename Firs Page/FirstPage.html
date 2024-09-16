@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 2 - Using Links in HTML5</title>
+    </head>
+    <body>
+        <main>
+            <h1>Links</h1>
+            <p>Knowing how to link your code to other document is important</p>
+            <div id = "absolute">
+                <h2>Absolut references</h2>
+                <p>Absolut references (sometimes called external links) connect to pages in other domains. In the href attribute of the tags the full URL of the page, image ot other resources you would like to link to is specified. Once example might be your quest to list some of the greates bakeries of all time. Since you want to link to the bakeries themselves and not to files that you wrote, you would use an absolute reference.</p>
+                <ul>
+                    <li><a href="https://washtenwdairy.com/">Washtenaw Dairy</a></li>
+                    <li><a href="http://thedexterbakery.com/">The Dexter Bakery</a></li>
+                </ul>
+                <p>The code I used to create the link is: </p>
+                <pre>
+                    &lt;a href = "https://washtenawdiry.com/" &gt;Washtenaw Dairy&lt;/a&gt;
+                    &lt;a href = "http://thedexterbakery.com/"&gt; The Dexter Baker&lt;/a&gt;
+                </pre>
+            </div>
+            <div id = "relatives">
+                <h2>Relative reference</h2>
+                Relative refernces connect to pages within your domain. The href attribute of the tag only the folder (if any) and filename is specified. Some examples of when you might use relative references would be in your navigation bar or links to your own image.
+                <ul>
+                    <li><a href = "fontwavesome.html">Code from this week's lecture on FontAwesome lecture</a></li>
+                    <li><a href = "images/WD_Donut.jpg">A picture from a subfolder called images.</a></li>
+                    <li><a href = ".../week1/firstPage.html">Code from previous week's lecture</a></li>
+                </ul>
+                <p>The code I used to create the link is: </p>
+                <pre>
+                    &lt;a href = "fontawesome.html"&gt;Code from this week's lectur on FontAwesome lecture.&gt;&lt;/a&gt;
+                </pre>
+            </div>
+            <div id = "images">
+                <h2>Images as Links</h2>
+                <p>More an dmore people are moving away from textual prompts to ones that are graphics based. This is to make the page look "nicer". I can redo the external link to Washtenaw Dairy using a picture instead of words.</p>
+                <li><a href = "https://washtenawdairy.com"><img src = "WD_donut.jpeg" alt = "Washtenaw Dairy"></a></li>
+                <p>Something to keep in mind though is that not everyone cans see the image, or they may not realize that the image is a link. As you become more confident in your coding you will want to make sure to have people test your page instead of just to the page in general. This is a great way to allow people to quickly jump to a specific section on your page.</p>
+                <ol>
+                    <li><a href = "#absolute">Absoulte References</a></li>
+                    <li><a href = "#relative">Relative References</a></li>
+                    <li><a href = "#images">Images as Links</a></li>
+                    <li><a href = "#embeded">Embeded Refrences</a></li>
+                </ol>
+                <p>When you click on any of the links don't appear to do anything, but that may be because the content is already visible on your screen.</p>
+                <p>Here is the cde I used to create those four links</p>
+                <pre>&lt;a href = "#absolute"&gt;Absolute References&lt;/a&gt;
+                    &lt;a href = "#relative"&gt;Relative References&lt;/a&gt;
+                    &lt;a href = "#embeded"&gt;Embeded Refernces&lt;/a&gt;
+                </pre>
+                <p>**Don't forget that you can chose "View Source" from your browser to take a closer look at the code I created to create these links</p>
+            </div>
+        </main>
+    </body>
+</html>
